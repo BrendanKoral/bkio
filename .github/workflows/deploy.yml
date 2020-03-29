@@ -9,8 +9,7 @@ jobs:
     - name: SSH into this thing
       uses: appleboy/ssh-action@master
       with:
-        host: "bkoral.io"
-        username: builder
-        password: ${{ secrets.deployprivate }}
-        port: 22
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
         script: whoami
