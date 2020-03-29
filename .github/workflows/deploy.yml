@@ -11,5 +11,5 @@ jobs:
       with:
         host: bkoral.io
         username: builder
-        key: ${{ secrets.deploykey }}
+        key: ${{ secrets.deployprivate }}
         script: ls -la
