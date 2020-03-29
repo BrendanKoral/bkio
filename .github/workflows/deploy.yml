@@ -11,5 +11,5 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.PUBKEY }}
+        key: ${{ secrets.KEY }}
         script: whoami
